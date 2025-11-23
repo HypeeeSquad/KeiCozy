@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Kei&#39;s Cozy Place 🌸</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Keitaro · Illustrator & Animator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="theme-light">
+  <!-- Animated sky background -->
+  <div class="sky-layer">
+    <div class="sun-or-moon sun"></div>
+
+    <!-- Day clouds -->
+    <div class="cloud cloud-1"></div>
+    <div class="cloud cloud-2"></div>
+    <div class="cloud cloud-3"></div>
+
+    <!-- Night dark clouds -->
+    <div class="dark-cloud dcloud-1"></div>
+    <div class="dark-cloud dcloud-2"></div>
+
+    <!-- Stars -->
+    <div class="stars">
+      <span class="star star-1"></span>
+      <span class="star star-2"></span>
+      <span class="star star-3"></span>
+      <span class="star star-4"></span>
+      <span class="star star-5"></span>
+    </div>
+  </div>
+
+  <!-- Top bar -->
+  <header class="top-bar">
+    <div class="top-left">
+      <span class="logo-dot"></span>
+      <span class="top-title">keitaro desktop</span>
+    </div>
+
+    <div class="top-right">
+  <!-- NEW: music toggle button -->
+ 
+
+  <button class="icon-button" id="toggle-sfx" aria-pressed="false">
+    🔊
+  </button>
+  <button class="icon-button" id="toggle-theme" aria-pressed="false">
+    🌙
+  </button>
+</div>
+
+  </header>
+
+  <!-- Main desktop area -->
+  <main class="desktop">
+    <!-- Hero / home card -->
+    <section class="hero-card">
+      <div class="hero-text">
+        <p class="hero-eyebrow">hi! i'm</p>
+        <h1 class="hero-name">Keitaro</h1>
+        <h2 class="hero-title">illustrator · animator</h2>
+        <p class="hero-description">
+          I create expressive illustrations and animations with a strong anime-inspired style.
+          Over <strong>30k+ friends on Instagram</strong> follow my art journey.
+        </p>
+
+        <button class="primary-button" data-open-window="contact-window">
+          Work with me
+        </button>
+      </div>
+
+      <div class="hero-avatar">
+        <!-- Optional: use your own avatar here -->
+        <!-- <img src="kei-avatar.jpg" alt="Keitaro" class="avatar-img" /> -->
+        <div class="avatar-circle">
+          <span>🎨</span>
+        </div>
+        <p class="hero-location">Illustrator & animator online</p>
+      </div>
+    </section>
+
+    <!-- "Dock" / shortcut icons -->
+    <nav class="dock">
+      <button class="dock-item" data-open-window="about-window">
+        <span class="dock-icon dock-icon-person"></span>
+        <span class="dock-label">About</span>
+      </button>
+
+      <button class="dock-item" data-open-window="links-window">
+        <span class="dock-icon dock-icon-link"></span>
+        <span class="dock-label">Socials</span>
+      </button>
+
+      <button class="dock-item" data-open-window="work-window">
+        <span class="dock-icon dock-icon-work"></span>
+        <span class="dock-label">Work</span>
+      </button>
+
+      <button class="dock-item" data-open-window="gallery-window">
+        <span class="dock-icon dock-icon-gallery"></span>
+        <span class="dock-label">Art Gallery</span>
+      </button>
+
+      <button class="dock-item" data-open-window="downloads-window">
+        <span class="dock-icon dock-icon-download"></span>
+        <span class="dock-label">Downloads</span>
+      </button>
+
+      <button class="dock-item" data-open-window="faq-window">
+        <span class="dock-icon dock-icon-faq"></span>
+        <span class="dock-label">FAQ</span>
+      </button>
+    </nav>
+
+    <!-- Windows / Panels -->
+
+    <!-- About window -->
+    <section class="window" id="about-window" aria-hidden="true">
+      <header class="window-header">
+        <span>About me</span>
+        <button class="window-close" data-close-window>✕</button>
+      </header>
+      <div class="window-body">
+        <h3>Keitaro</h3>
+        <p class="window-subtitle">Illustrator & animator</p>
+
+        <p>
+          I’m an illustrator and animator who loves bringing characters to life with
+          movement, emotion, and color. My focus is on anime-inspired artwork, expressive
+          faces, and dynamic compositions.
+        </p>
+
+        <h4>Online presence</h4>
+        <p>
+          I share my work regularly on Instagram, where over <strong>30k+ followers</strong>
+          support my art, and on YouTube, where I post animations and content.
+        </p>
+
+        <h4>What I love drawing</h4>
+        <ul>
+          <li>Anime-style characters</li>
+          <li>Dynamic poses and expressions</li>
+          <li>Stylized backgrounds</li>
+          <li>Fun, energetic animations</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Social Links window -->
+    <section class="window" id="links-window" aria-hidden="true">
+      <header class="window-header">
+        <span>Socials</span>
+        <button class="window-close" data-close-window>✕</button>
+      </header>
+      <div class="window-body window-grid">
+        <a
+          href="https://www.instagram.com/kei_keitaro_kun?igsh=N3kyY29hNnQ2ZXhy"
+          target="_blank"
+          class="link-tile"
+        >
+          <span class="link-icon social-icon instagram-icon"></span>
+          <span class="link-label">Instagram · @kei_keitaro_kun</span>
+          <small>30k+ followers</small>
+        </a>
+
+        <a
+          href="https://youtube.com/@hypeeeofficial?si=EAL3oImO_xJheWxR"
+          target="_blank"
+          class="link-tile"
+        >
+          <span class="link-icon social-icon youtube-icon"></span>
+          <span class="link-label">YouTube · @hypeeeofficial</span>
+          <small>Animations & videos</small>
+        </a>
+
+        <p class="links-note">
+          All links open in a new tab.
+        </p>
+      </div>
+    </section>
+
+    <!-- Work window -->
+    <section class="window" id="work-window" aria-hidden="true">
+      <header class="window-header">
+        <span>Work & services</span>
+        <button class="window-close" data-close-window>✕</button>
+      </header>
+      <div class="window-body window-columns">
+        <div>
+          <h4>What I do</h4>
+          <p>
+            I create illustration and animation-focused artworks. This includes character art,
+            keyframes, short loops, and visuals for social media or personal use.
+          </p>
+
+          <h4>Services</h4>
+          <ul class="tag-list">
+            <li>Character illustration</li>
+            <li>Anime-style artwork</li>
+            <li>Short animations</li>
+            <li>Thumbnails / Covers</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Projects (artworks)</h4>
+
+          <article class="project-card">
+            <h5>Artwork Project 1</h5>
+            <p>
+              Featured illustration from my Instagram gallery. High detail, expressive lighting,
+              and anime-inspired style.
+            </p>
+            <a
+              href="https://www.instagram.com/p/CugqmNSgOzk/?igsh=MW1tbTJyY3hzNm0yaQ=="
+              target="_blank"
+              class="text-link"
+            >
+              View on Instagram →
+            </a>
+          </article>
+
+          <article class="project-card">
+            <h5>Animation Project 1</h5>
+            <p>
+              Short animated loop showcasing character movement and timing.
+            </p>
+            <a
+              href="https://www.instagram.com/reel/CxsNLyUNkqC/?igsh=MWMwcnR1bDVuMDcxaA=="
+              target="_blank"
+              class="text-link"
+            >
+              Watch the reel →
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery window (your artworks) -->
+    <section class="window" id="gallery-window" aria-hidden="true">
+      <header class="window-header">
+        <span>Art Gallery</span>
+        <button class="window-close" data-close-window>✕</button>
+      </header>
+      <div class="window-body">
+        <div class="gallery-grid">
+          <!-- Artwork 1 -->
+          <figure class="gallery-item">
+            <div class="gallery-thumb">
+              <a href="https://ibb.co/FqmjHKrj" target="_blank">
+                <img
+                  src="https://i.ibb.co/DgzSrtJS/lllllkkk.png"
+                  alt="Artwork 1 by Keitaro"
+                />
+              </a>
+            </div>
+            <figcaption>Artwork 1</figcaption>
+          </figure>
+
+          <!-- Artwork 2 -->
+          <figure class="gallery-item">
+            <div class="gallery-thumb">
+              <a href="https://ibb.co/XZYrrHb8" target="_blank">
+                <img
+                  src="https://i.ibb.co/MDBxxds6/scene.png"
+                  alt="Artwork 2 by Keitaro"
+                />
+              </a>
+            </div>
+            <figcaption>Artwork 2</figcaption>
+          </figure>
+
+          <!-- Artwork 3 -->
+          <figure class="gallery-item">
+            <div class="gallery-thumb">
+              <a href="https://ibb.co/NdkWVPyQ" target="_blank">
+                <img
+                  src="https://i.ibb.co/1tpRv5mh/Untitled8.png"
+                  alt="Artwork 3 by Keitaro"
+                />
+              </a>
+            </div>
+            <figcaption>Artwork 3</figcaption>
+          </figure>
+
+          <!-- Artwork 4 -->
+          <figure class="gallery-item">
+            <div class="gallery-thumb">
+              <a href="https://ibb.co/xSFjCvXK" target="_blank">
+                <img
+                  src="https://i.ibb.co/LzNtkwYD/the-finish.jpg"
+                  alt="Artwork 4 by Keitaro"
+                />
+              </a>
+            </div>
+            <figcaption>Artwork 4</figcaption>
+          </figure>
+        </div>
+
+        <p class="window-footer-note">
+
+        </p>
+      </div>
+    </section>
+
+    <!-- Downloads window -->
+    <section class="window" id="downloads-window" aria-hidden="true">
+      <header class="window-header">
+        <span>Downloads</span>
+        <button class="window-close" data-close-window>✕</button>
+      </header>
+      <div class="window-body">
+        <p>Free personal-use goodies for supporters.</p>
+
+        <div class="download-grid">
+          <!-- Wallpaper -->
+          <article class="download-card">
+            <div class="download-thumb">
+              <a href="https://ibb.co/PZZmrcpg" target="_blank">
+                <img
+                  src="https://i.ibb.co/9998pbXW/school-girl.jpg"
+                  alt="Wallpaper artwork by Keitaro"
+                />
+              </a>
+            </div>
+            <h5>Phone / PC Wallpaper</h5>
+            <p>Wallpaper made from one of my artworks.</p>
+            <a
+              href="https://ibb.co/PZZmrcpg"
+              target="_blank"
+              class="primary-ghost-button"
+            >
+              Open wallpaper
+            </a>
+          </article>
+
+          <!-- Sticker pack -->
+          <article class="download-card">
+            <div class="download-thumb">
+              <a href="https://ibb.co/LdctwJDY" target="_blank">
+                <img
+                  src="https://i.ibb.co/DfvCX8Pz/Untitled60.jpg"
+                  alt="Sticker sheet by Keitaro"
+                />
+              </a>
+            </div>
+            <h5>Sticker Pack</h5>
+            <p>Cute expressions from my characters.</p>
+            <a
+              href="https://ibb.co/LdctwJDY"
+              target="_blank"
+              class="primary-ghost-button"
+            >
+              Open sticker sheet
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ window -->
+    <section class="window" id="faq-window" aria-hidden="true">
+      <header class="window-header">
+        <span>FAQ</span>
+        <button class="window-close" data-close-window>✕</button>
+      </header>
+      <div class="window-body">
+        <details class="faq-item" open>
+          <summary>Are you open for commissions?</summary>
+          <p>
+            Check my Instagram bio or contact me through email for the current commission status.
+          </p>
+        </details>
+
+        <details class="faq-item">
+          <summary>What style do you draw in?</summary>
+          <p>
+            Mostly anime-inspired, with a focus on strong characters, expressions, and movement.
+          </p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Can I use your art?</summary>
+          <p>
+            Yup Sure! I have no problem with that just do me a lil favour please add credits the owner of the art. You can use that as your Dp/icons or as a stickers (HEHE).
+          </p>
+        </details>
+      </div>
+    </section>
+
+    <!-- Contact window -->
+    <section class="window" id="contact-window" aria-hidden="true">
+      <header class="window-header">
+        <span>Contact</span>
+        <button class="window-close" data-close-window>✕</button>
+      </header>
+      <div class="window-body">
+        <h3>Work inquiries</h3>
+        <p>
+          For commissions, collaborations, or project work, please send me an email with your idea,
+          budget, and timeline.
+        </p>
+
+        <p class="contact-email">
+          <a href="mailto:fruitcat001@gmail.com">fruitcat001@gmail.com</a>
+        </p>
+
+        <button class="primary-button" id="open-gmail">
+          Write email in Gmail
+        </button>
+      </div>
+    </section>
+  </main>
+
+   <!-- Chibi animation bottom-left (fixed) -->
+  <div class="chibi-container">
+    <img
+      class="chibi-img"
+      src="https://media.tenor.com/YDirXp8qi7kAAAAj/evernight.gif"
+      alt="Chibi animation"
+    />
+    <span class="chibi-label">𝗪𝗲𝗹𝗰𝗼𝗺𝗲 :3 </span>
+  </div>
+
+  <!-- Mobile note -->
+  <div class="mobile-note">
+    <p>
+      This site is designed for bigger screens (like a little desktop). On mobile, some layouts
+      may look different.
+    </p>
+    <button id="dismiss-mobile-note">Okay</button>
+  </div>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Keitaro</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
